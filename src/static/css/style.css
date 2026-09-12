@@ -921,3 +921,179 @@ button {
     }
 
 }
+/* =====================================================
+   PROFESSIONAL SCROLL ANIMATIONS
+===================================================== */
+
+.hero-content {
+    animation: heroContentIn 1s ease-out both;
+}
+
+.hero-profile {
+    animation: heroProfileIn 1.2s ease-out both;
+}
+
+@keyframes heroContentIn {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes heroProfileIn {
+    from {
+        opacity: 0;
+        transform: translateX(50px) scale(0.92);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0) scale(1);
+    }
+}
+
+/* Section reveal */
+
+.section-heading,
+.about-grid,
+.skills-grid,
+.timeline,
+.projects-grid,
+.hobbies-grid,
+.contact-box,
+.career-card {
+    animation: sectionReveal 0.9s ease-out both;
+}
+
+@keyframes sectionReveal {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Profile floating effect */
+
+.profile-card {
+    animation: profileFloat 4s ease-in-out infinite;
+}
+
+@keyframes profileFloat {
+    0%,
+    100% {
+        transform: rotate(3deg) translateY(0);
+    }
+
+    50% {
+        transform: rotate(3deg) translateY(-10px);
+    }
+}
+
+/* Button shine */
+
+.btn {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 60%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.25),
+        transparent
+    );
+    transform: skewX(-20deg);
+    transition: 0.6s;
+}
+
+.btn:hover::before {
+    left: 130%;
+}
+
+/* Cards premium hover */
+
+.skill-card,
+.project-card,
+.hobby-card,
+.about-card {
+    transition:
+        transform 0.4s ease,
+        border-color 0.4s ease,
+        box-shadow 0.4s ease;
+}
+
+.skill-card:hover,
+.project-card:hover,
+.hobby-card:hover,
+.about-card:hover {
+    box-shadow: 0 15px 40px rgba(22, 140, 255, 0.15);
+}
+
+/* Navigation underline */
+
+.desktop-nav a {
+    position: relative;
+}
+
+.desktop-nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 0;
+    height: 2px;
+    background: var(--blue);
+    transition: width 0.3s ease;
+}
+
+.desktop-nav a:hover::after {
+    width: 100%;
+}
+
+/* Scroll arrow animation */
+
+.scroll-down div {
+    animation: scrollArrow 1.5s ease-in-out infinite;
+}
+
+@keyframes scrollArrow {
+    0%,
+    100% {
+        transform: translateY(0);
+        opacity: 0.5;
+    }
+
+    50% {
+        transform: translateY(8px);
+        opacity: 1;
+    }
+}
+
+/* Respect reduced-motion preference */
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+    }
+}
