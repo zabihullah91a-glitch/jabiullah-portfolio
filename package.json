@@ -1,0 +1,21 @@
+{
+  "name": "my-portfolio",
+  "version": "1.0.0",
+  "description": "Jabiullah Professional Portfolio Website",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "keywords": [
+    "portfolio",
+    "web-developer",
+    "jabiullah"
+  ],
+  "author": "Jabiullah",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^5.2.1"
+  }
+}
