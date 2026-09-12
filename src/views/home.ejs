@@ -398,7 +398,7 @@
 
                             <div class="skill-number">
 
-                                <%= String(index + 1).padStart(2, "0" ) %>
+                                <%= String(index + 1).padStart(2, "0") %>
 
                             </div>
 
@@ -615,12 +615,11 @@
                             <div class="project-top">
 
                                 <span class="project-number">
-                                    0<%= index + 1 %>
+                                    <%= String(index + 1).padStart(2, "0") %>
                                 </span>
 
-
                                 <span class="project-icon">
-                                    ↗
+                                    <i class="fa-solid fa-code"></i>
                                 </span>
 
                             </div>
@@ -645,6 +644,32 @@
                                     </span>
 
                                 <% }) %>
+
+                            </div>
+
+
+                            <div class="project-buttons">
+
+                                <a
+                                    href="<%= project.github %>"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="project-btn github-btn"
+                                >
+                                    <i class="fa-brands fa-github"></i>
+                                    GitHub
+                                </a>
+
+
+                                <a
+                                    href="<%= project.live %>"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="project-btn live-btn"
+                                >
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    Live Demo
+                                </a>
 
                             </div>
 
@@ -734,15 +759,15 @@
 
                             <div class="hobby-icon">
 
-                                <% if (hobby==="Coding" ) { %>
+                                <% if (hobby === "Coding") { %>
 
                                     &lt;/&gt;
 
-                                <% } else if (hobby==="Listening to Music" ) { %>
+                                <% } else if (hobby === "Listening to Music") { %>
 
                                     ♪
 
-                                <% } else if (hobby==="Cricket" ) { %>
+                                <% } else if (hobby === "Cricket") { %>
 
                                     🏏
 

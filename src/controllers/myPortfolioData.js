@@ -120,7 +120,13 @@ const portfolioData = {
                 "Express",
                 "EJS"
 
-            ]
+            ],
+
+            github:
+                "https://github.com/zabihullah91a-glitch/jabiullah-portfolio",
+
+            live:
+                "https://jabiullah-portfolio.onrender.com"
 
         }
 

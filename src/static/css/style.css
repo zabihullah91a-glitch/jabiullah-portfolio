@@ -1097,3 +1097,56 @@ button {
         scroll-behavior: auto !important;
     }
 }
+/* =====================================================
+   PROJECT BUTTONS
+===================================================== */
+
+.project-buttons {
+    display: flex;
+    gap: 12px;
+    margin-top: 28px;
+    flex-wrap: wrap;
+}
+
+.project-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 11px 18px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.github-btn {
+    color: #ffffff;
+    background: #111111;
+    border: 1px solid #444444;
+}
+
+.github-btn:hover {
+    color: #ffffff;
+    border-color: var(--blue);
+    background: #168cff;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(22, 140, 255, 0.35);
+}
+
+.live-btn {
+    color: #000000;
+    background: var(--blue);
+    border: 1px solid var(--blue);
+}
+
+.live-btn:hover {
+    color: #ffffff;
+    background: transparent;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(22, 140, 255, 0.25);
+}
+
+.project-btn i {
+    font-size: 14px;
+}
