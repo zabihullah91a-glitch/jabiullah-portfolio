@@ -70,9 +70,8 @@ app.get("/certificate/Invigo_Internship_Acceptance_Letter.pdf", (req, res) => {
 // so Express does not need a /contact POST route.
 
 
-// 404
 app.use((req, res) => {
-    res.status(404).send("Page Not Found");
+    res.status(404).render("404");
 });
 
 
