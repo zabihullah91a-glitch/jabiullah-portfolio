@@ -18,8 +18,7 @@
     <link rel="stylesheet" href="/css/style.css?v=2">
 
     <!-- Font Awesome -->
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
 </head>
 
@@ -37,8 +36,7 @@
 
             <a href="#home" class="logo">
 
-                <img src="/images/profile.png"
-                    alt="Jabiullah">
+                <img src="/images/profile.png" alt="Jabiullah">
 
             </a>
 
@@ -72,10 +70,7 @@
             </nav>
 
 
-            <button
-                class="menu-btn"
-                id="menuBtn"
-                type="button">
+            <button class="menu-btn" id="menuBtn" type="button">
 
                 ☰
 
@@ -86,9 +81,7 @@
 
         <!-- MOBILE MENU -->
 
-        <div
-            class="mobile-menu"
-            id="mobileMenu">
+        <div class="mobile-menu" id="mobileMenu">
 
             <a href="#home">
                 Home
@@ -126,9 +119,7 @@
 
     <main>
 
-        <section
-            class="hero"
-            id="home">
+        <section class="hero" id="home">
 
 
             <div class="hero-bg"></div>
@@ -197,28 +188,21 @@
                     <div class="hero-buttons">
 
 
-                        <a
-                            href="#projects"
-                            class="btn primary-btn">
+                        <a href="#projects" class="btn primary-btn">
 
                             View My Work
 
                         </a>
 
 
-                        <a
-                            href="#contact"
-                            class="btn outline-btn">
+                        <a href="#contact" class="btn outline-btn">
 
                             Contact Me
 
                         </a>
 
 
-                        <a
-                            href="/resume/Jabiullah_Resume.pdf"
-                            class="btn resume-btn"
-                            target="_blank"
+                        <a href="/resume/Jabiullah_Resume.pdf" class="btn resume-btn" target="_blank"
                             rel="noopener noreferrer">
 
                             <i class="fa-solid fa-file-arrow-down"></i>
@@ -238,10 +222,7 @@
 
                         <!-- Instagram -->
 
-                        <a
-                            href="https://www.instagram.com/imjabi_305"
-                            target="_blank"
-                            rel="noopener noreferrer"
+                        <a href="https://www.instagram.com/imjabi_305" target="_blank" rel="noopener noreferrer"
                             aria-label="Instagram">
 
                             <i class="fa-brands fa-instagram"></i>
@@ -251,11 +232,8 @@
 
                         <!-- LinkedIn -->
 
-                        <a
-                            href="https://www.linkedin.com/in/zabi-basir-a0b832249"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            aria-label="LinkedIn">
+                        <a href="https://www.linkedin.com/in/zabi-basir-a0b832249" target="_blank"
+                            rel="noopener noreferrer" aria-label="LinkedIn">
 
                             <i class="fa-brands fa-linkedin-in"></i>
 
@@ -264,10 +242,7 @@
 
                         <!-- Facebook -->
 
-                        <a
-                            href="https://www.facebook.com/share/1BgF3H2wVy/"
-                            target="_blank"
-                            rel="noopener noreferrer"
+                        <a href="https://www.facebook.com/share/1BgF3H2wVy/" target="_blank" rel="noopener noreferrer"
                             aria-label="Facebook">
 
                             <i class="fa-brands fa-facebook-f"></i>
@@ -277,11 +252,7 @@
 
                         <!-- X -->
 
-                        <a
-                            href="https://x.com/im_zabi_378"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            aria-label="X">
+                        <a href="https://x.com/im_zabi_378" target="_blank" rel="noopener noreferrer" aria-label="X">
 
                             <i class="fa-brands fa-x-twitter"></i>
 
@@ -305,10 +276,7 @@
                     <div class="profile-card">
 
 
-                        <img
-                            src="/images/profile.png"
-                            alt="Jabiullah Profile Photo"
-                            class="profile-photo">
+                        <img src="/images/profile.png" alt="Jabiullah Profile Photo" class="profile-photo">
 
 
                         <div class="profile-name">
@@ -362,9 +330,7 @@
              ABOUT
         ====================================================== -->
 
-        <section
-            class="section about-section"
-            id="about">
+        <section class="section about-section" id="about">
 
             <div class="container">
 
@@ -495,12 +461,13 @@
              SKILLS
         ====================================================== -->
 
-        <section
-            class="section skills-section"
-            id="skills">
+        <!-- =====================================================
+     SKILLS
+====================================================== -->
+
+        <section class="section skills-section" id="skills">
 
             <div class="container">
-
 
                 <div class="section-heading">
 
@@ -523,15 +490,11 @@
                 </div>
 
 
-
                 <div class="skills-grid">
-
 
                     <% portfolio.skills.forEach((skill, index)=> { %>
 
-
                         <div class="skill-card">
-
 
                             <div class="skill-number">
 
@@ -540,21 +503,130 @@
                             </div>
 
 
-                            <h3>
+                            <div class="skill-content">
 
-                                <%= skill %>
+                                <div class="skill-title-row">
 
-                            </h3>
+                                    <h3>
+                                        <%= skill %>
+                                    </h3>
+
+                                    <span class="skill-percent">
+
+                                        <% if (skill==="C Programming" ) { %>
+                                            70%
+                                            <% } else if (skill==="HTML" ) { %>
+                                                90%
+                                                <% } else if (skill==="CSS" ) { %>
+                                                    85%
+                                                    <% } else if (skill==="JavaScript" ) { %>
+                                                        75%
+                                                        <% } else if (skill==="Python" ) { %>
+                                                            70%
+                                                            <% } else if (skill==="Data Structures" ) { %>
+                                                                60%
+                                                                <% } else if (skill==="Java" ) { %>
+                                                                    55%
+                                                                    <% } else { %>
+                                                                        50%
+                                                                        <% } %>
+
+                                    </span>
+
+                                </div>
+
+
+                                <div class="skill-progress">
+
+                                    <div class="skill-progress-bar" data-skill="<%= skill %>">
+
+                                    </div>
+
+                                </div>
+
+
+                                <p class="skill-level">
+
+                                    <% if (skill==="HTML" ) { %>
+
+                                        Frontend Foundation
+
+                                        <% } else if (skill==="CSS" ) { %>
+
+                                            UI & Styling
+
+                                            <% } else if (skill==="JavaScript" ) { %>
+
+                                                Web Development
+
+                                                <% } else if (skill==="Python" ) { %>
+
+                                                    Programming
+
+                                                    <% } else if (skill==="C Programming" ) { %>
+
+                                                        Programming Fundamentals
+
+                                                        <% } else if (skill==="Data Structures" ) { %>
+
+                                                            Problem Solving
+
+                                                            <% } else if (skill==="Java" ) { %>
+
+                                                                Currently Learning
+
+                                                                <% } else { %>
+
+                                                                    Learning
+
+                                                                    <% } %>
+
+                                </p>
+
+                            </div>
 
 
                             <div class="skill-line"></div>
 
-
                         </div>
 
+                        <% }) %>
 
-                    <% }) %>
+                </div>
 
+
+                <!-- Currently Learning -->
+
+                <div class="learning-box">
+
+                    <div>
+
+                        <span>
+                            CURRENTLY LEARNING
+                        </span>
+
+                        <h3>
+                            Improving my skills every day 🚀
+                        </h3>
+
+                    </div>
+
+
+                    <div class="learning-tags">
+
+                        <% portfolio.learning.forEach((item)=> { %>
+
+                            <span>
+
+                                <i class="fa-solid fa-code"></i>
+
+                                <%= item %>
+
+                            </span>
+
+                            <% }) %>
+
+                    </div>
 
                 </div>
 
@@ -563,14 +635,11 @@
         </section>
 
 
-
         <!-- =====================================================
              EDUCATION
         ====================================================== -->
 
-        <section
-            class="section education-section"
-            id="education">
+        <section class="section education-section" id="education">
 
             <div class="container">
 
@@ -689,13 +758,13 @@
 
                                 <%= portfolio.education.class12.board %>
 
-                                —
+                                    —
 
-                                <strong>
+                                    <strong>
 
-                                    <%= portfolio.education.class12.percentage %>
+                                        <%= portfolio.education.class12.percentage %>
 
-                                </strong>
+                                    </strong>
 
                             </p>
 
@@ -741,13 +810,13 @@
 
                                 <%= portfolio.education.class10.board %>
 
-                                —
+                                    —
 
-                                <strong>
+                                    <strong>
 
-                                    <%= portfolio.education.class10.percentage %>
+                                        <%= portfolio.education.class10.percentage %>
 
-                                </strong>
+                                    </strong>
 
                             </p>
 
@@ -769,9 +838,7 @@
              PROJECTS
         ====================================================== -->
 
-        <section
-            class="section projects-section"
-            id="projects">
+        <section class="section projects-section" id="projects">
 
             <div class="container">
 
@@ -854,7 +921,7 @@
                                     </span>
 
 
-                                <% }) %>
+                                    <% }) %>
 
 
                             </div>
@@ -863,10 +930,7 @@
                             <div class="project-buttons">
 
 
-                                <a
-                                    href="<%= project.github %>"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
+                                <a href="<%= project.github %>" target="_blank" rel="noopener noreferrer"
                                     class="project-btn github-btn">
 
                                     <i class="fa-brands fa-github"></i>
@@ -876,10 +940,7 @@
                                 </a>
 
 
-                                <a
-                                    href="<%= project.live %>"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
+                                <a href="<%= project.live %>" target="_blank" rel="noopener noreferrer"
                                     class="project-btn live-btn">
 
                                     <i class="fa-solid fa-arrow-up-right-from-square"></i>
@@ -895,7 +956,7 @@
                         </article>
 
 
-                    <% }) %>
+                        <% }) %>
 
 
                 </div>
@@ -970,8 +1031,7 @@
              HOBBIES
         ====================================================== -->
 
-        <section
-            class="section hobbies-section">
+        <section class="section hobbies-section">
 
             <div class="container">
 
@@ -1015,17 +1075,17 @@
                                     &lt;/&gt;
 
 
-                                <% } else if (hobby==="Listening to Music" ) { %>
+                                    <% } else if (hobby==="Listening to Music" ) { %>
 
-                                    ♪
-
-
-                                <% } else if (hobby==="Cricket" ) { %>
-
-                                    🏏
+                                        ♪
 
 
-                                <% } %>
+                                        <% } else if (hobby==="Cricket" ) { %>
+
+                                            🏏
+
+
+                                            <% } %>
 
 
                             </div>
@@ -1041,7 +1101,7 @@
                         </div>
 
 
-                    <% }) %>
+                        <% }) %>
 
 
                 </div>
@@ -1056,9 +1116,7 @@
              CONTACT
         ====================================================== -->
 
-        <section
-            class="section contact-section"
-            id="contact">
+        <section class="section contact-section" id="contact">
 
             <div class="container">
 
@@ -1105,30 +1163,18 @@
 
                         <!-- FORM SUBMIT CONTACT FORM -->
 
-                        <form
-                            action="https://formsubmit.co/zabihullah91a@gmail.com"
-                            method="POST"
-                            class="contact-form">
+                        <form action="https://formsubmit.co/zabihullah91a@gmail.com" method="POST" class="contact-form">
 
 
                             <!-- FormSubmit Settings -->
 
-                            <input
-                                type="hidden"
-                                name="_subject"
-                                value="New Portfolio Contact Message">
+                            <input type="hidden" name="_subject" value="New Portfolio Contact Message">
 
 
-                            <input
-                                type="hidden"
-                                name="_template"
-                                value="table">
+                            <input type="hidden" name="_template" value="table">
 
 
-                            <input
-                                type="hidden"
-                                name="_captcha"
-                                value="true">
+                            <input type="hidden" name="_captcha" value="true">
 
 
 
@@ -1144,12 +1190,7 @@
                                 </label>
 
 
-                                <input
-                                    type="text"
-                                    id="name"
-                                    name="name"
-                                    placeholder="Enter your name"
-                                    required>
+                                <input type="text" id="name" name="name" placeholder="Enter your name" required>
 
 
                             </div>
@@ -1168,12 +1209,7 @@
                                 </label>
 
 
-                                <input
-                                    type="email"
-                                    id="email"
-                                    name="email"
-                                    placeholder="Enter your email"
-                                    required>
+                                <input type="email" id="email" name="email" placeholder="Enter your email" required>
 
 
                             </div>
@@ -1192,12 +1228,7 @@
                                 </label>
 
 
-                                <input
-                                    type="text"
-                                    id="subject"
-                                    name="subject"
-                                    placeholder="Enter subject"
-                                    required>
+                                <input type="text" id="subject" name="subject" placeholder="Enter subject" required>
 
 
                             </div>
@@ -1216,11 +1247,7 @@
                                 </label>
 
 
-                                <textarea
-                                    id="message"
-                                    name="message"
-                                    rows="6"
-                                    placeholder="Write your message..."
+                                <textarea id="message" name="message" rows="6" placeholder="Write your message..."
                                     required></textarea>
 
 
@@ -1230,9 +1257,7 @@
 
                             <!-- SEND BUTTON -->
 
-                            <button
-                                type="submit"
-                                class="btn primary-btn contact-submit">
+                            <button type="submit" class="btn primary-btn contact-submit">
 
 
                                 <i class="fa-solid fa-paper-plane"></i>
@@ -1252,9 +1277,7 @@
                         <div class="contact-details">
 
 
-                            <a
-                                href="mailto:<%= portfolio.personal.email %>"
-                                class="contact-item">
+                            <a href="mailto:<%= portfolio.personal.email %>" class="contact-item">
 
 
                                 <span>

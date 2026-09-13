@@ -1150,3 +1150,173 @@ button {
 .project-btn i {
     font-size: 14px;
 }
+/* =====================================================
+   PROFESSIONAL SKILLS UPGRADE
+===================================================== */
+
+.skill-card {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.35s ease,
+                border-color 0.35s ease,
+                box-shadow 0.35s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(22, 140, 255, 0.7);
+    box-shadow: 0 15px 40px rgba(22, 140, 255, 0.15);
+}
+
+.skill-content {
+    position: relative;
+    z-index: 2;
+}
+
+.skill-title-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.skill-percent {
+    color: #168cff;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.skill-progress {
+    width: 100%;
+    height: 6px;
+    margin-top: 18px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.skill-progress-bar {
+    height: 100%;
+    width: 0;
+    background: #168cff;
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(22, 140, 255, 0.65);
+    animation: skillFill 1.5s ease forwards;
+}
+
+/* Individual skill percentages */
+
+.skill-progress-bar[data-skill="C Programming"] {
+    --skill-width: 70%;
+}
+
+.skill-progress-bar[data-skill="HTML"] {
+    --skill-width: 90%;
+}
+
+.skill-progress-bar[data-skill="CSS"] {
+    --skill-width: 85%;
+}
+
+.skill-progress-bar[data-skill="JavaScript"] {
+    --skill-width: 75%;
+}
+
+.skill-progress-bar[data-skill="Python"] {
+    --skill-width: 70%;
+}
+
+.skill-progress-bar[data-skill="Data Structures"] {
+    --skill-width: 60%;
+}
+
+.skill-progress-bar[data-skill="Java"] {
+    --skill-width: 55%;
+}
+
+@keyframes skillFill {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: var(--skill-width);
+    }
+}
+
+.skill-level {
+    margin-top: 10px;
+    font-size: 13px;
+    opacity: 0.65;
+}
+
+/* Currently Learning */
+
+.learning-box {
+    margin-top: 45px;
+    padding: 30px;
+    border: 1px solid rgba(22, 140, 255, 0.25);
+    background: rgba(255, 255, 255, 0.02);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    transition: all 0.3s ease;
+}
+
+.learning-box:hover {
+    border-color: rgba(22, 140, 255, 0.65);
+    box-shadow: 0 10px 35px rgba(22, 140, 255, 0.1);
+}
+
+.learning-box > div:first-child span {
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #168cff;
+    font-weight: 700;
+}
+
+.learning-box h3 {
+    margin-top: 8px;
+}
+
+.learning-tags {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.learning-tags span {
+    padding: 10px 16px;
+    border: 1px solid rgba(22, 140, 255, 0.35);
+    color: #ffffff;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.learning-tags span:hover {
+    background: #168cff;
+    border-color: #168cff;
+    transform: translateY(-3px);
+}
+
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    .skill-title-row {
+        align-items: flex-start;
+    }
+
+    .skill-percent {
+        font-size: 13px;
+    }
+
+    .learning-box {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 25px 20px;
+    }
+
+}
