@@ -60,7 +60,16 @@ app.use(
         path.join(staticPath, "images")
     )
 );
+// ========================================
+// STATIC RESUME
+// ========================================
 
+app.use(
+    "/resume",
+    express.static(
+        path.join(staticPath, "resume")
+    )
+);
 
 // ========================================
 // EJS
@@ -95,7 +104,24 @@ app.get("/jabiullah", (req, res) => {
     });
 
 });
+app.get("/resume-test", (req, res) => {
+    res.send("RESUME ROUTE WORKING");
+});
+// ========================================
+// RESUME PDF
+// ========================================
 
+app.get("/resume/Jabiullah_Resume.pdf", (req, res) => {
+
+    res.sendFile(
+        path.join(
+            staticPath,
+            "resume",
+            "Jabiullah_Resume.pdf"
+        )
+    );
+
+});
 
 // ========================================
 // 404

@@ -18,8 +18,7 @@
     <link rel="stylesheet" href="/css/style.css?v=2">
 
     <!-- Font Awesome -->
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
 </head>
 
@@ -146,9 +145,14 @@
                             View My Work
                         </a>
 
-
                         <a href="#contact" class="btn outline-btn">
                             Contact Me
+                        </a>
+
+                        <a href="/resume/Jabiullah_Resume.pdf" class="btn resume-btn" target="_blank"
+                            rel="noopener noreferrer">
+                            <i class="fa-solid fa-file-arrow-down"></i>
+                            Download Resume
                         </a>
 
                     </div>
@@ -162,9 +166,7 @@
 
                         <!-- Instagram -->
 
-                        <a href="https://www.instagram.com/imjabi_305"
-                            target="_blank"
-                            rel="noopener noreferrer"
+                        <a href="https://www.instagram.com/imjabi_305" target="_blank" rel="noopener noreferrer"
                             aria-label="Instagram">
 
                             <i class="fa-brands fa-instagram"></i>
@@ -174,10 +176,8 @@
 
                         <!-- LinkedIn -->
 
-                        <a href="https://www.linkedin.com/in/zabi-basir-a0b832249"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            aria-label="LinkedIn">
+                        <a href="https://www.linkedin.com/in/zabi-basir-a0b832249" target="_blank"
+                            rel="noopener noreferrer" aria-label="LinkedIn">
 
                             <i class="fa-brands fa-linkedin-in"></i>
 
@@ -186,9 +186,7 @@
 
                         <!-- Facebook -->
 
-                        <a href="https://www.facebook.com/share/1BgF3H2wVy/"
-                            target="_blank"
-                            rel="noopener noreferrer"
+                        <a href="https://www.facebook.com/share/1BgF3H2wVy/" target="_blank" rel="noopener noreferrer"
                             aria-label="Facebook">
 
                             <i class="fa-brands fa-facebook-f"></i>
@@ -198,10 +196,7 @@
 
                         <!-- X -->
 
-                        <a href="https://x.com/im_zabi_378"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            aria-label="X">
+                        <a href="https://x.com/im_zabi_378" target="_blank" rel="noopener noreferrer" aria-label="X">
 
                             <i class="fa-brands fa-x-twitter"></i>
 
@@ -221,11 +216,7 @@
 
                     <div class="profile-card">
 
-                        <img
-                            src="/images/profile.png"
-                            alt="Jabiullah Profile Photo"
-                            class="profile-photo"
-                        >
+                        <img src="/images/profile.png" alt="Jabiullah Profile Photo" class="profile-photo">
 
                         <div class="profile-name">
                             Jabiullah
@@ -398,7 +389,7 @@
 
                             <div class="skill-number">
 
-                                <%= String(index + 1).padStart(2, "0") %>
+                                <%= String(index + 1).padStart(2, "0" ) %>
 
                             </div>
 
@@ -412,7 +403,7 @@
 
                         </div>
 
-                    <% }) %>
+                        <% }) %>
 
                 </div>
 
@@ -520,11 +511,11 @@
 
                                 <%= portfolio.education.class12.board %>
 
-                                —
+                                    —
 
-                                <strong>
-                                    <%= portfolio.education.class12.percentage %>
-                                </strong>
+                                    <strong>
+                                        <%= portfolio.education.class12.percentage %>
+                                    </strong>
 
                             </p>
 
@@ -562,11 +553,11 @@
 
                                 <%= portfolio.education.class10.board %>
 
-                                —
+                                    —
 
-                                <strong>
-                                    <%= portfolio.education.class10.percentage %>
-                                </strong>
+                                    <strong>
+                                        <%= portfolio.education.class10.percentage %>
+                                    </strong>
 
                             </p>
 
@@ -615,7 +606,7 @@
                             <div class="project-top">
 
                                 <span class="project-number">
-                                    <%= String(index + 1).padStart(2, "0") %>
+                                    <%= String(index + 1).padStart(2, "0" ) %>
                                 </span>
 
                                 <span class="project-icon">
@@ -643,30 +634,22 @@
                                         <%= tech %>
                                     </span>
 
-                                <% }) %>
+                                    <% }) %>
 
                             </div>
 
 
                             <div class="project-buttons">
 
-                                <a
-                                    href="<%= project.github %>"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    class="project-btn github-btn"
-                                >
+                                <a href="<%= project.github %>" target="_blank" rel="noopener noreferrer"
+                                    class="project-btn github-btn">
                                     <i class="fa-brands fa-github"></i>
                                     GitHub
                                 </a>
 
 
-                                <a
-                                    href="<%= project.live %>"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    class="project-btn live-btn"
-                                >
+                                <a href="<%= project.live %>" target="_blank" rel="noopener noreferrer"
+                                    class="project-btn live-btn">
                                     <i class="fa-solid fa-arrow-up-right-from-square"></i>
                                     Live Demo
                                 </a>
@@ -675,7 +658,7 @@
 
                         </article>
 
-                    <% }) %>
+                        <% }) %>
 
                 </div>
 
@@ -759,19 +742,19 @@
 
                             <div class="hobby-icon">
 
-                                <% if (hobby === "Coding") { %>
+                                <% if (hobby==="Coding" ) { %>
 
                                     &lt;/&gt;
 
-                                <% } else if (hobby === "Listening to Music") { %>
+                                    <% } else if (hobby==="Listening to Music" ) { %>
 
-                                    ♪
+                                        ♪
 
-                                <% } else if (hobby === "Cricket") { %>
+                                        <% } else if (hobby==="Cricket" ) { %>
 
-                                    🏏
+                                            🏏
 
-                                <% } %>
+                                            <% } %>
 
                             </div>
 
@@ -782,7 +765,7 @@
 
                         </div>
 
-                    <% }) %>
+                        <% }) %>
 
                 </div>
 
@@ -829,10 +812,7 @@
 
                     <div class="contact-details">
 
-                        <a
-                            href="mailto:<%= portfolio.personal.email %>"
-                            class="contact-item"
-                        >
+                        <a href="mailto:<%= portfolio.personal.email %>" class="contact-item">
 
                             <span>
                                 EMAIL
@@ -898,9 +878,9 @@
                 ©
                 <%= new Date().getFullYear() %>
 
-                <%= portfolio.personal.name %>.
+                    <%= portfolio.personal.name %>.
 
-                All Rights Reserved.
+                        All Rights Reserved.
 
             </p>
 
