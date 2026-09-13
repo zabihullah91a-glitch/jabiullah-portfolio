@@ -15,7 +15,9 @@
   "author": "Jabiullah",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^17.4.2",
     "ejs": "^3.1.10",
-    "express": "^5.2.1"
+    "express": "^5.2.1",
+    "nodemailer": "^10.0.9"
   }
 }

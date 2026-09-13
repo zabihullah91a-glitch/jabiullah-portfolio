@@ -810,32 +810,52 @@
                     </div>
 
 
-                    <div class="contact-details">
+                    <div class="contact-form-wrapper">
 
-                        <a href="mailto:<%= portfolio.personal.email %>" class="contact-item">
+                        <form action="/contact" method="POST" class="contact-form">
 
-                            <span>
-                                EMAIL
-                            </span>
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" name="name"
+                                    placeholder="Enter your name" required>
+                            </div>
 
+                            <div class="form-group">
+                                <label for="email">Your Email</label>
+                                <input type="email" id="email" name="email"
+                                    placeholder="Enter your email" required>
+                            </div>
 
-                            <strong>
-                                <%= portfolio.personal.email %>
-                            </strong>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject"
+                                    placeholder="Enter subject" required>
+                            </div>
 
-                        </a>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="6"
+                                    placeholder="Write your message..." required></textarea>
+                            </div>
 
+                            <button type="submit" class="btn primary-btn contact-submit">
+                                <i class="fa-solid fa-paper-plane"></i>
+                                Send Message
+                            </button>
 
-                        <div class="contact-item">
+                        </form>
 
-                            <span>
-                                LOCATION
-                            </span>
+                        <div class="contact-details">
 
+                            <a href="mailto:<%= portfolio.personal.email %>" class="contact-item">
+                                <span>EMAIL</span>
+                                <strong><%= portfolio.personal.email %></strong>
+                            </a>
 
-                            <strong>
-                                <%= portfolio.personal.location %>
-                            </strong>
+                            <div class="contact-item">
+                                <span>LOCATION</span>
+                                <strong><%= portfolio.personal.location %></strong>
+                            </div>
 
                         </div>
 
