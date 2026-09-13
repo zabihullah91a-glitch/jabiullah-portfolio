@@ -140,7 +140,16 @@ const portfolioData = {
         "Cricket"
 
     ],
-
+    achievements: [
+        {
+            title: "Web Development Intern",
+            organization: "Invigo Infotech",
+            type: "2 Weeks Offline Internship",
+            startDate: "01 September 2026",
+            status: "Accepted Internship",
+            referenceId: "2026INWE2019EE3"
+        }
+    ],
 
     careerGoal:
         "My goal is to become a professional Web Developer and Software Developer. I want to continuously improve my coding skills and build real-world projects."

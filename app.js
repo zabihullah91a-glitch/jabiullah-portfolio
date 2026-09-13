@@ -55,7 +55,15 @@ app.get("/resume/Jabiullah_Resume.pdf", (req, res) => {
         )
     );
 });
-
+app.get("/certificate/Invigo_Internship_Acceptance_Letter.pdf", (req, res) => {
+    res.sendFile(
+        path.join(
+            staticPath,
+            "certificates",
+            "Invigo_Internship_Acceptance_Letter.pdf"
+        )
+    );
+});
 
 // CONTACT FORM
 // FormSubmit handles the email,

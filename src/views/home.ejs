@@ -98,6 +98,7 @@
             <a href="#education">
                 Education
             </a>
+            <a href="#achievements">Achievements</a>
 
             <a href="#projects">
                 Projects
@@ -831,7 +832,131 @@
             </div>
 
         </section>
+        <!-- =====================================================
+     ACHIEVEMENTS & EXPERIENCE
+===================================================== -->
 
+        <section class="section achievements-section" id="achievements">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <span>
+                        04
+                    </span>
+
+                    <div>
+
+                        <p>
+                            MY EXPERIENCE
+                        </p>
+
+                        <h2>
+                            Achievements & Experience
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="achievements-grid">
+
+                    <% portfolio.achievements.forEach((achievement, index)=> { %>
+
+                        <div class="achievement-card">
+
+                            <div class="achievement-top">
+
+                                <div class="achievement-icon">
+
+                                    <i class="fa-solid fa-award"></i>
+
+                                </div>
+
+                                <span class="achievement-number">
+
+                                    <%= String(index + 1).padStart(2, "0" ) %>
+
+                                </span>
+
+                            </div>
+
+
+                            <span class="achievement-status">
+
+                                <i class="fa-solid fa-circle-check"></i>
+
+                                <%= achievement.status %>
+
+                            </span>
+
+
+                            <h3>
+
+                                <%= achievement.title %>
+
+                            </h3>
+
+
+                            <h4>
+
+                                <%= achievement.organization %>
+
+                            </h4>
+
+
+                            <p>
+
+                                <%= achievement.type %>
+
+                            </p>
+
+
+                            <div class="achievement-details">
+
+                                <span>
+
+                                    <i class="fa-regular fa-calendar"></i>
+
+                                    Started:
+                                    <%= achievement.startDate %>
+
+                                </span>
+
+
+                                <span>
+
+                                    <i class="fa-solid fa-hashtag"></i>
+
+                                    <%= achievement.referenceId %>
+
+                                </span>
+
+                            </div>
+                            <a href="/certificate/Invigo_Internship_Acceptance_Letter.pdf" target="_blank"
+                                rel="noopener noreferrer" class="achievement-certificate-btn">
+
+                                <i class="fa-solid fa-file-pdf"></i>
+
+                                View Acceptance Letter
+
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                            </a>
+
+                            <div class="achievement-line"></div>
+
+                        </div>
+
+                        <% }) %>
+
+                </div>
+
+            </div>
+
+        </section>
 
 
         <!-- =====================================================
