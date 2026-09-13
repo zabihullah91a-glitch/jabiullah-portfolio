@@ -183,3 +183,43 @@ revealElements.forEach((element) => {
     element.classList.add("reveal-hidden");
     revealObserver.observe(element);
 });
+/* =====================================================
+   PREMIUM LOADING SCREEN
+===================================================== */
+
+window.addEventListener("load", () => {
+
+    const loadingScreen =
+        document.getElementById("loadingScreen");
+
+    setTimeout(() => {
+
+        loadingScreen.classList.add("hide");
+
+    }, 2000);
+
+});
+/* =====================================================
+   BACK TO TOP BUTTON
+===================================================== */
+
+const backToTop = document.getElementById("backToTop");
+
+window.addEventListener("scroll", () => {
+
+    if (window.scrollY > 500) {
+        backToTop.classList.add("show");
+    } else {
+        backToTop.classList.remove("show");
+    }
+
+});
+
+backToTop.addEventListener("click", () => {
+
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+
+});

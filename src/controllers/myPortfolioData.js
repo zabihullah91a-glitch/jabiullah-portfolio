@@ -104,30 +104,19 @@ const portfolioData = {
     projects: [
 
         {
-
-            name:
-                "Personal Portfolio",
-
-            description:
-                "A professional personal portfolio website created using HTML, CSS, JavaScript, Node.js, Express and EJS.",
-
+            name: "Personal Portfolio",
+            description: "A professional personal portfolio website showcasing my skills, education, projects, internship experience and contact information.",
             technologies: [
-
                 "HTML",
                 "CSS",
                 "JavaScript",
                 "Node.js",
                 "Express",
                 "EJS"
-
             ],
-
-            github:
-                "https://github.com/zabihullah91a-glitch/jabiullah-portfolio",
-
-            live:
-                "https://jabiullah-portfolio.onrender.com"
-
+            github: "https://github.com/zabihullah91a-glitch/jabiullah-portfolio",
+            live: "https://jabiullah-portfolio.onrender.com",
+            featured: true
         }
 
     ],
