@@ -121,8 +121,7 @@ function typingEffect() {
 }
 
 
-typingEffect();
-
+document.addEventListener("DOMContentLoaded", typingEffect);
 
 // ========================================
 // HEADER SCROLL
@@ -205,21 +204,134 @@ window.addEventListener("load", () => {
 
 const backToTop = document.getElementById("backToTop");
 
-window.addEventListener("scroll", () => {
+document.addEventListener("DOMContentLoaded", () => {
 
-    if (window.scrollY > 500) {
-        backToTop.classList.add("show");
-    } else {
-        backToTop.classList.remove("show");
-    }
+    const loadingScreen =
+        document.getElementById("loadingScreen");
+
+    setTimeout(() => {
+        loadingScreen.classList.add("hide");
+    }, 1200);
 
 });
 
-backToTop.addEventListener("click", () => {
+if (backToTop) {
+    backToTop.addEventListener("click", () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+}
 
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth"
+// INTERACTIVE TERMINAL
+
+const terminalInput = document.getElementById("terminalInput");
+const terminalOutput = document.getElementById("terminalOutput");
+
+if (terminalInput && terminalOutput) {
+
+    terminalInput.addEventListener("keydown", (event) => {
+
+        if (event.key !== "Enter") return;
+
+        const command = terminalInput.value
+            .trim()
+            .toLowerCase();
+
+        if (!command) return;
+
+        const commandLine = document.createElement("p");
+
+        commandLine.innerHTML =
+            `<span>jabiullah@portfolio:~$</span> ${command}`;
+
+        terminalOutput.appendChild(commandLine);
+
+        let response = "";
+
+        switch (command) {
+
+            case "help":
+                response =
+                    "Available commands: about, skills, projects, education, achievements, projects, contact, resume, github, clear";
+                break;
+
+            case "about":
+                response =
+                    "Jabiullah — B.Tech CSE Student & Aspiring Web Developer.";
+                break;
+
+            case "skills":
+                response =
+                    "C, HTML, CSS, JavaScript, Python, Data Structures, Java.";
+                break;
+
+            case "projects":
+                response =
+                    "Personal Portfolio — HTML, CSS, JavaScript, Node.js, Express & EJS.";
+
+                document.getElementById("projects").scrollIntoView({
+                    behavior: "smooth"
+                });
+                break;
+            case "education":
+                response =
+                    "B.Tech CSE — Vidya Vihar Institute of Technology, Purnia.";
+
+                document.getElementById("education").scrollIntoView({
+                    behavior: "smooth"
+                });
+
+                break;
+            case "achievements":
+                response =
+                    "Web Development Intern — Invigo Infotech.";
+
+                document.getElementById("achievements").scrollIntoView({
+                    behavior: "smooth"
+                });
+
+                break;
+            case "github":
+                window.open(
+                    "https://github.com/zabihullah91a-glitch/jabiullah-portfolio",
+                    "_blank"
+                );
+                response = "Opening GitHub...";
+                break;
+            case "resume":
+                window.open(
+                    "/resume/Jabiullah_Resume.pdf",
+                    "_blank"
+                );
+                response = "Opening resume...";
+                break;
+            case "contact":
+                response =
+                    "Email: zabibullah91a@gmail.com";
+                break;
+
+            case "clear":
+                terminalOutput.innerHTML = "";
+                terminalInput.value = "";
+                return;
+
+            default:
+                response =
+                    `Command not found: ${command}. Type "help" for available commands.`;
+        }
+
+        const responseLine = document.createElement("p");
+        responseLine.textContent = response;
+
+        terminalOutput.appendChild(responseLine);
+
+        terminalInput.value = "";
+
+        terminalOutput.scrollTop =
+            terminalOutput.scrollHeight;
     });
 
-});
+}
+// HERO TYPING EFFECT
