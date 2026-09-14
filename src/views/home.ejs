@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -24,6 +25,7 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="icon" type="image/png" href="/images/profile.png">
+    <meta name="google-site-verification" content="vt0_tnhCATwWn2Ojm6wue_YFPyl9ttr9AY_-ShMd-zs" />
 </head>
 
 
@@ -177,7 +179,7 @@
 
                     <h1>
 
-                        <%= portfolio.personal.name %>
+                        Jabiullah
 
                     </h1>
 
@@ -195,7 +197,7 @@
 
                     <p class="hero-description">
 
-                        <%= portfolio.personal.bio %>
+                        I am a passionate Computer Science and Engineering student who loves coding, web development and learning new technologies.
 
                     </p>
 
@@ -206,7 +208,7 @@
 
                             📍
 
-                            <%= portfolio.personal.location %>
+                            Katihar, Bihar, India
 
                         </span>
 
@@ -414,7 +416,7 @@
                             I am
 
                             <strong>
-                                <%= portfolio.personal.name %>
+                                Jabiullah
                             </strong>,
 
                             a Computer Science & Engineering
@@ -430,7 +432,7 @@
                             Computer Science & Engineering at
 
                             <strong>
-                                <%= portfolio.education.college.name %>
+                                Vidya Vihar Institute of Technology, Purnia
                             </strong>.
 
                         </p>
@@ -527,13 +529,13 @@
 
                 <div class="skills-grid">
 
-                    <% portfolio.skills.forEach((skill, index)=> { %>
+                    
 
                         <div class="skill-card">
 
                             <div class="skill-number">
 
-                                <%= String(index + 1).padStart(2, "0" ) %>
+                                01
 
                             </div>
 
@@ -543,28 +545,14 @@
                                 <div class="skill-title-row">
 
                                     <h3>
-                                        <%= skill %>
+                                        C Programming
                                     </h3>
 
                                     <span class="skill-percent">
 
-                                        <% if (skill==="C Programming" ) { %>
+                                        
                                             70%
-                                            <% } else if (skill==="HTML" ) { %>
-                                                90%
-                                                <% } else if (skill==="CSS" ) { %>
-                                                    85%
-                                                    <% } else if (skill==="JavaScript" ) { %>
-                                                        75%
-                                                        <% } else if (skill==="Python" ) { %>
-                                                            70%
-                                                            <% } else if (skill==="Data Structures" ) { %>
-                                                                60%
-                                                                <% } else if (skill==="Java" ) { %>
-                                                                    55%
-                                                                    <% } else { %>
-                                                                        50%
-                                                                        <% } %>
+                                            
 
                                     </span>
 
@@ -573,7 +561,7 @@
 
                                 <div class="skill-progress">
 
-                                    <div class="skill-progress-bar" data-skill="<%= skill %>">
+                                    <div class="skill-progress-bar" data-skill="C Programming">
 
                                     </div>
 
@@ -582,39 +570,11 @@
 
                                 <p class="skill-level">
 
-                                    <% if (skill==="HTML" ) { %>
-
-                                        Frontend Foundation
-
-                                        <% } else if (skill==="CSS" ) { %>
-
-                                            UI & Styling
-
-                                            <% } else if (skill==="JavaScript" ) { %>
-
-                                                Web Development
-
-                                                <% } else if (skill==="Python" ) { %>
-
-                                                    Programming
-
-                                                    <% } else if (skill==="C Programming" ) { %>
+                                    
 
                                                         Programming Fundamentals
 
-                                                        <% } else if (skill==="Data Structures" ) { %>
-
-                                                            Problem Solving
-
-                                                            <% } else if (skill==="Java" ) { %>
-
-                                                                Currently Learning
-
-                                                                <% } else { %>
-
-                                                                    Learning
-
-                                                                    <% } %>
+                                                        
 
                                 </p>
 
@@ -625,7 +585,343 @@
 
                         </div>
 
-                        <% }) %>
+                        
+
+                        <div class="skill-card">
+
+                            <div class="skill-number">
+
+                                02
+
+                            </div>
+
+
+                            <div class="skill-content">
+
+                                <div class="skill-title-row">
+
+                                    <h3>
+                                        HTML
+                                    </h3>
+
+                                    <span class="skill-percent">
+
+                                        
+                                                90%
+                                                
+
+                                    </span>
+
+                                </div>
+
+
+                                <div class="skill-progress">
+
+                                    <div class="skill-progress-bar" data-skill="HTML">
+
+                                    </div>
+
+                                </div>
+
+
+                                <p class="skill-level">
+
+                                    
+
+                                        Frontend Foundation
+
+                                        
+
+                                </p>
+
+                            </div>
+
+
+                            <div class="skill-line"></div>
+
+                        </div>
+
+                        
+
+                        <div class="skill-card">
+
+                            <div class="skill-number">
+
+                                03
+
+                            </div>
+
+
+                            <div class="skill-content">
+
+                                <div class="skill-title-row">
+
+                                    <h3>
+                                        CSS
+                                    </h3>
+
+                                    <span class="skill-percent">
+
+                                        
+                                                    85%
+                                                    
+
+                                    </span>
+
+                                </div>
+
+
+                                <div class="skill-progress">
+
+                                    <div class="skill-progress-bar" data-skill="CSS">
+
+                                    </div>
+
+                                </div>
+
+
+                                <p class="skill-level">
+
+                                    
+
+                                            UI & Styling
+
+                                            
+
+                                </p>
+
+                            </div>
+
+
+                            <div class="skill-line"></div>
+
+                        </div>
+
+                        
+
+                        <div class="skill-card">
+
+                            <div class="skill-number">
+
+                                04
+
+                            </div>
+
+
+                            <div class="skill-content">
+
+                                <div class="skill-title-row">
+
+                                    <h3>
+                                        JavaScript
+                                    </h3>
+
+                                    <span class="skill-percent">
+
+                                        
+                                                        75%
+                                                        
+
+                                    </span>
+
+                                </div>
+
+
+                                <div class="skill-progress">
+
+                                    <div class="skill-progress-bar" data-skill="JavaScript">
+
+                                    </div>
+
+                                </div>
+
+
+                                <p class="skill-level">
+
+                                    
+
+                                                Web Development
+
+                                                
+
+                                </p>
+
+                            </div>
+
+
+                            <div class="skill-line"></div>
+
+                        </div>
+
+                        
+
+                        <div class="skill-card">
+
+                            <div class="skill-number">
+
+                                05
+
+                            </div>
+
+
+                            <div class="skill-content">
+
+                                <div class="skill-title-row">
+
+                                    <h3>
+                                        Python
+                                    </h3>
+
+                                    <span class="skill-percent">
+
+                                        
+                                                            70%
+                                                            
+
+                                    </span>
+
+                                </div>
+
+
+                                <div class="skill-progress">
+
+                                    <div class="skill-progress-bar" data-skill="Python">
+
+                                    </div>
+
+                                </div>
+
+
+                                <p class="skill-level">
+
+                                    
+
+                                                    Programming
+
+                                                    
+
+                                </p>
+
+                            </div>
+
+
+                            <div class="skill-line"></div>
+
+                        </div>
+
+                        
+
+                        <div class="skill-card">
+
+                            <div class="skill-number">
+
+                                06
+
+                            </div>
+
+
+                            <div class="skill-content">
+
+                                <div class="skill-title-row">
+
+                                    <h3>
+                                        Data Structures
+                                    </h3>
+
+                                    <span class="skill-percent">
+
+                                        
+                                                                60%
+                                                                
+
+                                    </span>
+
+                                </div>
+
+
+                                <div class="skill-progress">
+
+                                    <div class="skill-progress-bar" data-skill="Data Structures">
+
+                                    </div>
+
+                                </div>
+
+
+                                <p class="skill-level">
+
+                                    
+
+                                                            Problem Solving
+
+                                                            
+
+                                </p>
+
+                            </div>
+
+
+                            <div class="skill-line"></div>
+
+                        </div>
+
+                        
+
+                        <div class="skill-card">
+
+                            <div class="skill-number">
+
+                                07
+
+                            </div>
+
+
+                            <div class="skill-content">
+
+                                <div class="skill-title-row">
+
+                                    <h3>
+                                        Java
+                                    </h3>
+
+                                    <span class="skill-percent">
+
+                                        
+                                                                    55%
+                                                                    
+
+                                    </span>
+
+                                </div>
+
+
+                                <div class="skill-progress">
+
+                                    <div class="skill-progress-bar" data-skill="Java">
+
+                                    </div>
+
+                                </div>
+
+
+                                <p class="skill-level">
+
+                                    
+
+                                                                Currently Learning
+
+                                                                
+
+                                </p>
+
+                            </div>
+
+
+                            <div class="skill-line"></div>
+
+                        </div>
+
+                        
 
                 </div>
 
@@ -649,17 +945,27 @@
 
                     <div class="learning-tags">
 
-                        <% portfolio.learning.forEach((item)=> { %>
+                        
 
                             <span>
 
                                 <i class="fa-solid fa-code"></i>
 
-                                <%= item %>
+                                Data Structures
 
                             </span>
 
-                            <% }) %>
+                            
+
+                            <span>
+
+                                <i class="fa-solid fa-code"></i>
+
+                                Java
+
+                            </span>
+
+                            
 
                     </div>
 
@@ -723,14 +1029,14 @@
 
                             <h3>
 
-                                <%= portfolio.education.college.course %>
+                                B.Tech - Computer Science &amp; Engineering
 
                             </h3>
 
 
                             <h4>
 
-                                <%= portfolio.education.college.name %>
+                                Vidya Vihar Institute of Technology, Purnia
 
                             </h4>
 
@@ -741,13 +1047,13 @@
 
                                 <strong>
 
-                                    <%= portfolio.education.college.year %>
+                                    2nd Year
 
                                 </strong>
 
                                 -
 
-                                <%= portfolio.education.college.semester %>
+                                3rd Semester
 
                             </p>
 
@@ -784,20 +1090,20 @@
 
                             <h4>
 
-                                <%= portfolio.education.class12.school %>
+                                Harishankar Nayak, Mirchaibadi, Katihar
 
                             </h4>
 
 
                             <p>
 
-                                <%= portfolio.education.class12.board %>
+                                Bihar Board
 
                                     —
 
                                     <strong>
 
-                                        <%= portfolio.education.class12.percentage %>
+                                        70%
 
                                     </strong>
 
@@ -836,20 +1142,20 @@
 
                             <h4>
 
-                                <%= portfolio.education.class10.school %>
+                                UUMV School
 
                             </h4>
 
 
                             <p>
 
-                                <%= portfolio.education.class10.board %>
+                                Bihar Board
 
                                     —
 
                                     <strong>
 
-                                        <%= portfolio.education.class10.percentage %>
+                                        65%
 
                                     </strong>
 
@@ -897,7 +1203,7 @@
 
                 <div class="achievements-grid">
 
-                    <% portfolio.achievements.forEach((achievement, index)=> { %>
+                    
 
                         <div class="achievement-card">
 
@@ -911,7 +1217,7 @@
 
                                 <span class="achievement-number">
 
-                                    <%= String(index + 1).padStart(2, "0" ) %>
+                                    01
 
                                 </span>
 
@@ -922,28 +1228,28 @@
 
                                 <i class="fa-solid fa-circle-check"></i>
 
-                                <%= achievement.status %>
+                                Accepted Internship
 
                             </span>
 
 
                             <h3>
 
-                                <%= achievement.title %>
+                                Web Development Intern
 
                             </h3>
 
 
                             <h4>
 
-                                <%= achievement.organization %>
+                                Invigo Infotech
 
                             </h4>
 
 
                             <p>
 
-                                <%= achievement.type %>
+                                2 Weeks Offline Internship
 
                             </p>
 
@@ -955,7 +1261,7 @@
                                     <i class="fa-regular fa-calendar"></i>
 
                                     Started:
-                                    <%= achievement.startDate %>
+                                    01 September 2026
 
                                 </span>
 
@@ -964,7 +1270,7 @@
 
                                     <i class="fa-solid fa-hashtag"></i>
 
-                                    <%= achievement.referenceId %>
+                                    2026INWE2019EE3
 
                                 </span>
 
@@ -984,7 +1290,7 @@
 
                         </div>
 
-                        <% }) %>
+                        
 
                 </div>
 
@@ -1027,7 +1333,7 @@
                 <div class="projects-grid">
 
 
-                    <% portfolio.projects.forEach((project, index)=> { %>
+                    
 
 
                         <article class="project-card">
@@ -1038,7 +1344,7 @@
 
                                 <span class="project-number">
 
-                                    <%= String(index + 1).padStart(2, "0" ) %>
+                                    01
 
                                 </span>
 
@@ -1052,24 +1358,24 @@
 
                             </div>
 
-                            <% if (project.featured) { %>
+                            
 
                                 <span class="featured-badge">
                                     <i class="fa-solid fa-star"></i>
                                     Featured Project
                                 </span>
 
-                                <% } %>
+                                
                                     <h3>
 
-                                        <%= project.name %>
+                                        Personal Portfolio
 
                                     </h3>
 
 
                                     <p>
 
-                                        <%= project.description %>
+                                        A professional personal portfolio website showcasing my skills, education, projects, internship experience and contact information.
 
                                     </p>
 
@@ -1077,17 +1383,67 @@
                                     <div class="project-tech">
 
 
-                                        <% project.technologies.forEach((tech)=> { %>
+                                        
 
 
                                             <span>
 
-                                                <%= tech %>
+                                                HTML
 
                                             </span>
 
 
-                                            <% }) %>
+                                            
+
+
+                                            <span>
+
+                                                CSS
+
+                                            </span>
+
+
+                                            
+
+
+                                            <span>
+
+                                                JavaScript
+
+                                            </span>
+
+
+                                            
+
+
+                                            <span>
+
+                                                Node.js
+
+                                            </span>
+
+
+                                            
+
+
+                                            <span>
+
+                                                Express
+
+                                            </span>
+
+
+                                            
+
+
+                                            <span>
+
+                                                EJS
+
+                                            </span>
+
+
+                                            
 
 
                                     </div>
@@ -1096,7 +1452,7 @@
                                     <div class="project-buttons">
 
 
-                                        <a href="<%= project.github %>" target="_blank" rel="noopener noreferrer"
+                                        <a href="https://github.com/zabihullah91a-glitch/jabiullah-portfolio" target="_blank" rel="noopener noreferrer"
                                             class="project-btn github-btn">
 
                                             <i class="fa-brands fa-github"></i>
@@ -1106,7 +1462,7 @@
                                         </a>
 
 
-                                        <a href="<%= project.live %>" target="_blank" rel="noopener noreferrer"
+                                        <a href="https://jabiullah-portfolio.onrender.com" target="_blank" rel="noopener noreferrer"
                                             class="project-btn live-btn">
 
                                             <i class="fa-solid fa-arrow-up-right-from-square"></i>
@@ -1122,7 +1478,7 @@
                         </article>
 
 
-                        <% }) %>
+                        
 
 
                 </div>
@@ -1197,7 +1553,7 @@
 
                         <p>
 
-                            <%= portfolio.careerGoal %>
+                            My goal is to become a professional Web Developer and Software Developer. I want to continuously improve my coding skills and build real-world projects.
 
                         </p>
 
@@ -1254,7 +1610,7 @@
                 <div class="hobbies-grid">
 
 
-                    <% portfolio.hobbies.forEach((hobby)=> { %>
+                    
 
 
                         <div class="hobby-card">
@@ -1263,22 +1619,12 @@
                             <div class="hobby-icon">
 
 
-                                <% if (hobby==="Coding" ) { %>
+                                
 
                                     &lt;/&gt;
 
 
-                                    <% } else if (hobby==="Listening to Music" ) { %>
-
-                                        ♪
-
-
-                                        <% } else if (hobby==="Cricket" ) { %>
-
-                                            🏏
-
-
-                                            <% } %>
+                                    
 
 
                             </div>
@@ -1286,7 +1632,7 @@
 
                             <h3>
 
-                                <%= hobby %>
+                                Coding
 
                             </h3>
 
@@ -1294,7 +1640,67 @@
                         </div>
 
 
-                        <% }) %>
+                        
+
+
+                        <div class="hobby-card">
+
+
+                            <div class="hobby-icon">
+
+
+                                
+
+                                        ♪
+
+
+                                        
+
+
+                            </div>
+
+
+                            <h3>
+
+                                Listening to Music
+
+                            </h3>
+
+
+                        </div>
+
+
+                        
+
+
+                        <div class="hobby-card">
+
+
+                            <div class="hobby-icon">
+
+
+                                
+
+                                            🏏
+
+
+                                            
+
+
+                            </div>
+
+
+                            <h3>
+
+                                Cricket
+
+                            </h3>
+
+
+                        </div>
+
+
+                        
 
 
                 </div>
@@ -1470,7 +1876,7 @@
                         <div class="contact-details">
 
 
-                            <a href="mailto:<%= portfolio.personal.email %>" class="contact-item">
+                            <a href="mailto:zabihullah91a@gmail.com" class="contact-item">
 
 
                                 <span>
@@ -1482,7 +1888,7 @@
 
                                 <strong>
 
-                                    <%= portfolio.personal.email %>
+                                    zabihullah91a@gmail.com
 
                                 </strong>
 
@@ -1503,7 +1909,7 @@
 
                                 <strong>
 
-                                    <%= portfolio.personal.location %>
+                                    Katihar, Bihar, India
 
                                 </strong>
 
@@ -1542,7 +1948,7 @@
 
                 <h3>
 
-                    <%= portfolio.personal.name %>
+                    Jabiullah
 
                 </h3>
 
@@ -1561,9 +1967,9 @@
 
                 ©
 
-                <%= new Date().getFullYear() %>
+                2026
 
-                    <%= portfolio.personal.name %>.
+                    Jabiullah.
 
                         All Rights Reserved.
 
